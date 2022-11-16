@@ -1,12 +1,12 @@
 version: 1.2
 tools:
-  - name: ssips-uploader
+  - name: ssips-downloader
     subclass: CWL
     primaryDescriptorPath: /sounder_sips/utils/dapa_download.cwl
     authors:
         - name: Wai PHyo
           email: makesuretofilloutanactualemailaddress@ucsc.edu
-  - name: ssips-downlaoder
+  - name: ssips-uploader
     subclass: CWL
     primaryDescriptorPath: /sounder_sips/utils/dapa_upload.cwl
     authors:
