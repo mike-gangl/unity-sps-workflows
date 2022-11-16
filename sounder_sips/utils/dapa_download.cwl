@@ -80,3 +80,19 @@ outputs:
 stdout: stdout_dapa_download.txt
 stderr: stderr_dapa_download.txt
 
+$namespaces:
+  s: https://schema.org/
+s:softwareVersion: 1.0.0
+
+s:author: 
+  name: Unity Data Services
+s:citation:
+s:codeRepository: 
+  url: https://github.jpl.nasa.gov/unity-sds/unity-sps-workflows
+s:contributor: 
+  - name: Wai Phyo
+s:dateCreated: 2022-11-16
+s:keywords: dapa-download
+s:license: All Rights Reserved
+s:releaseNotes: Initial release
+s:version: 1.7.2
