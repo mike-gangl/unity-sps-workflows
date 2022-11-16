@@ -82,7 +82,7 @@ outputs:
 
 steps:
   l1b-stage-in:
-    run: https://raw.githubusercontent.com/unity-sds/unity-sps-workflows/devel/sounder_sips/utils/dapa_download.cwl
+    run: http://uads-test-dockstore-deploy-lb-1762603872.us-west-2.elb.amazonaws.com:9998/api/ga4gh/trs/v2/tools/%23workflow%2Fgithub.com%2Fmike-gangl%2Funity-sps-workflows%2Fssips-downloader/versions/main/PLAIN-CWL/descriptor/%2Fsounder_sips%2Futils%2Fdapa_download.cwl
     in:
       download_dir: download_dir
       dapa_api: dapa_api
@@ -113,7 +113,7 @@ steps:
     - stderr_file
 
   l1b-stage-out:
-    run: https://raw.githubusercontent.com/unity-sds/unity-sps-workflows/devel/sounder_sips/utils/dapa_upload.cwl
+    run: http://uads-test-dockstore-deploy-lb-1762603872.us-west-2.elb.amazonaws.com:9998/api/ga4gh/trs/v2/tools/%23workflow%2Fgithub.com%2Fmike-gangl%2Funity-sps-workflows%2Fssips-uploader/versions/main/PLAIN-CWL/descriptor/%2Fsounder_sips%2Futils%2Fdapa_upload.cwl
     in:
       upload_dir: l1b-run-pge/output_dir
       collection_id: output_collection_id
